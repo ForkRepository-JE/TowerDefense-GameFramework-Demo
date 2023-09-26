@@ -39,13 +39,13 @@ namespace Flower
             // Draw handles to resize map rect
             float size = HandleUtility.GetHandleSize(m_CameraControl.transform.position) * 0.125f;
             Vector3 snap = Vector3.one * 0.5f;
-            Vector3 bottom = Handles.FreeMoveHandle(bottomPosition, Quaternion.LookRotation(Vector3.up), size, snap,
+            var fmh_42_69_638313447711838907 = Quaternion.LookRotation(Vector3.up); Vector3 bottom = Handles.FreeMoveHandle(bottomPosition, size, snap,
                                                     Handles.RectangleHandleCap);
-            Vector3 top = Handles.FreeMoveHandle(topPosition, Quaternion.LookRotation(Vector3.up), size, snap,
+            var fmh_44_63_638313447711857833 = Quaternion.LookRotation(Vector3.up); Vector3 top = Handles.FreeMoveHandle(topPosition, size, snap,
                                                  Handles.RectangleHandleCap);
-            Vector3 left = Handles.FreeMoveHandle(leftPosition, Quaternion.LookRotation(Vector3.up), size, snap,
+            var fmh_46_65_638313447711858930 = Quaternion.LookRotation(Vector3.up); Vector3 left = Handles.FreeMoveHandle(leftPosition, size, snap,
                                                   Handles.RectangleHandleCap);
-            Vector3 right = Handles.FreeMoveHandle(rightPosition, Quaternion.LookRotation(Vector3.up), size, snap,
+            var fmh_48_67_638313447711859667 = Quaternion.LookRotation(Vector3.up); Vector3 right = Handles.FreeMoveHandle(rightPosition, size, snap,
                                                    Handles.RectangleHandleCap);
 
             ReprojectOntoFloor(ref bottom, floor);
